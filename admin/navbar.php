@@ -1,7 +1,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 5px">
     <div class="navbar-header">
-        <a class="navbar-brand" href="#">Sinto Electronics Ltd||P.O BOX 4589-00100 Nairobi Kenya|| Email:info@sinto.co.ke</a>
+        <a class="navbar-bra" href="#">Sinto Electronics Ltd||P.O BOX 4589-00100 Nairobi Kenya|| Email:info@sinto.co.ke</a>
     </div>
 
     <ul class="nav navbar-top-links navbar-right">
@@ -23,29 +23,9 @@
                 <li>
                     <a href="index.php"><i class="fa fa-home fa-fw"></i>Dashboard</a>
                 </li>
-                <!--
+
                 <li>
-                    <a href="#"><i class="fa fa-sitemap fa-fw"></i>Users & Products<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="#"><span class="glyphicon glyphicon-user"></span> Users <span class="fa arrow"></span></a>
-                            <ul class="nav nav-third-level">
-                                <li>
-                                    <a href="customer.php"> <i class="fa fa-user"></i>Sales Persons</a>
-                                </li>
-                                <li>
-                                    <a href="supplier.php"> <i class="fa fa-truck"></i> Supplier</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="product.php"> <i class="fa fa-product-hunt"></i> Products</a>
-                        </li>
-                    </ul>
-                </li>
--->
-                <li>
-                    <a href="customer.php"> <i class="fa fa-user"></i>Sales Persons</a>
+                    <a href="sales_person.php"> <i class="fa fa-user"></i>Sales Persons</a>
                 </li>
                 <li>
                     <a href="product.php"> <i class="fa fa-product-hunt"></i> Products</a>
@@ -70,12 +50,22 @@
 
     </div>
     <style>
-        body,.navbar,.navbar-default {
+        body,
+        .navbar,
+        .navbar-default {
             background-color: darkcyan;
         }
-        a{
+
+        body,
+        .navbar,
+        .navbar-default:hover,
+        .navbar-default:active {
+            color: darkcyan
+        }
+
+        a {
             color: white;
-            font-weight: 700;
+            font-weight: 600;
             padding: 10px;
             font-size: 15px;
         }

@@ -1,19 +1,19 @@
-<!-- Delete Customer -->
+<!-- Delete Sales Person -->
     <div class="modal fade" id="del_<?php echo $cqrow['userid']; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Delete Customer</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Delete Sales Person</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
 					<?php
-						$a=mysqli_query($conn,"select * from customer where userid='".$cqrow['userid']."'");
+						$a=mysqli_query($conn,"select * from sales_person where userid='".$cqrow['userid']."'");
 						$b=mysqli_fetch_array($a);
 					?>
-                    <h5><center>Customer Name: <strong><?php echo ucwords($b['customer_name']); ?></strong></center></h5>
-					<form role="form" method="POST" action="deletecustomer.php<?php echo '?id='.$cqrow['userid']; ?>">
+                    <h5><center>Sales Person Name: <strong><?php echo ucwords($b['person_name']); ?></strong></center></h5>
+					<form role="form" method="POST" action="delete_sales_person.php<?php echo '?id='.$cqrow['userid']; ?>">
                 </div>                 
 				</div>
                 <div class="modal-footer">
@@ -26,25 +26,25 @@
     </div>
 <!-- /.modal -->
 
-<!-- Edit Customer -->
+<!-- Edit Sales Person -->
     <div class="modal fade" id="edit_<?php echo $cqrow['userid']; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Edit Customer</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Edit Sales Person</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
 					<?php
-						$a=mysqli_query($conn,"select * from customer left join user on user.userid=customer.userid where customer.userid='".$cqrow['userid']."'");
+						$a=mysqli_query($conn,"select * from sales_person left join user on user.userid=sales_person.userid where sales_person.userid='".$cqrow['userid']."'");
 						$b=mysqli_fetch_array($a);
 					?>
 					<div style="height:10px;"></div>
-                    <form role="form" method="POST" action="edit_customer.php<?php echo '?id='.$cqrow['userid']; ?>">
+                    <form role="form" method="POST" action="edit_sales_person.php<?php echo '?id='.$cqrow['userid']; ?>">
                         <div class="form-group input-group">
                             <span class="input-group-addon" style="width:120px;">Name:</span>
-                            <input type="text" style="width:400px; text-transform:capitalize;" value="<?php echo ucwords($b['customer_name']); ?>" class="form-control" name="name">
+                            <input type="text" style="width:400px; text-transform:capitalize;" value="<?php echo ucwords($b['person_name']); ?>" class="form-control" name="name">
                         </div>
 						<div style="height:10px;"></div>
 						<div class="form-group input-group">

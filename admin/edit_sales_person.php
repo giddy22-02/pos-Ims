@@ -20,11 +20,11 @@
 	}
 
 	mysqli_query($conn,"update user set username='$username', password='$pass' where userid='$id'");
-	mysqli_query($conn,"update customer set customer_name='$name', address='$address', contact='$contact' where userid='$id'");
+	mysqli_query($conn,"update sales_person set person_name='$name', address='$address', contact='$contact' where userid='$id'");
 	
 	?>
 		<script>
-			window.alert('Customer updated successfully!');
+			window.alert('Sales persons updated successfully!');
 			window.history.back();
 		</script>
 	<?php

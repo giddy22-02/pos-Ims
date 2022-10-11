@@ -30,11 +30,11 @@
                 </thead>
                 <tbody>
 				<?php
-					$cq=mysqli_query($conn,"select * from customer left join user on user.userid=customer.userid");
+					$cq=mysqli_query($conn,"select * from sales_person left join user on user.userid=sales_person.userid");
 					while($cqrow=mysqli_fetch_array($cq)){
 					?>
 						<tr>
-							<td><?php echo $cqrow['customer_name']; ?></td>
+							<td><?php echo $cqrow['person_name']; ?></td>
 							<td><?php echo $cqrow['username']; ?></td>
 							<td>*****</td>
 							<td><?php echo $cqrow['address']; ?></td>

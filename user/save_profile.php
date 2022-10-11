@@ -6,7 +6,7 @@
 	$address= $_POST['address'];
 	$contact= $_POST['contact'];
 	
-	mysqli_query($conn,"update customer set customer_name='$name', address='$address', contact='$contact' where userid='$uid'");
+	mysqli_query($conn,"update sales_person set person_name='$name', address='$address', contact='$contact' where userid='$uid'");
 	
 	?>
 		<script>
