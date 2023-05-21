@@ -7,7 +7,7 @@
 	<div style="height: 50px;"></div>
 	<div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Sales History</h1>
+            <h1 class="page-header">Purchase History</h1>
         </div>
     </div>
                 <!-- /.row -->
@@ -17,7 +17,7 @@
 						<thead>
 							<tr>
 								<th class="hidden"></th>
-								<th>Sales Date</th>
+								<th>Purchase Date</th>
 								<th>Total Amount</th>
 								<th>Action</th>
 							</tr>

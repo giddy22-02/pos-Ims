@@ -27,7 +27,7 @@
 		}
 
 		#login_form {
-			background: darkcyan;
+			background: gray;
 			border-radius: 10px;
 			width: 420px;
 			height: 420px;

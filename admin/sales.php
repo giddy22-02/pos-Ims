@@ -25,13 +25,13 @@
                 </thead>
                 <tbody>
 				<?php
-					$sq=mysqli_query($conn,"select * from sales left join sales_person on sales_person.userid=sales.userid order by sales_date desc");
+					$sq=mysqli_query($conn,"select * from sales left join customer on customer.userid=sales.userid order by sales_date desc");
 					while($sqrow=mysqli_fetch_array($sq)){
 					?>
 						<tr>
 							<td class="hidden"></td>
 							<td><?php echo date('M d, Y h:i A',strtotime($sqrow['sales_date'])); ?></td>
-							<td><?php echo $sqrow['person_name']; ?></td>
+							<td><?php echo $sqrow['customer_name']; ?></td>
 							<td align="right"><?php echo number_format($sqrow['sales_total'],2); ?></td>
 							<td>
 								<a href="#detail<?php echo $sqrow['salesid']; ?>" data-toggle="modal" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-fullscreen"></span> View Full Details</a>

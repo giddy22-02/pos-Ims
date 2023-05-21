@@ -4,7 +4,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<center><h4 class="modal-title" id="myModalLabel">Sales Full Details</h4></center>
+					<center><h4 class="modal-title" id="myModalLabel">Purchase Full Details</h4></center>
                 </div>
                 <div class="modal-body">
 				<?php
@@ -24,7 +24,7 @@
 									<tr>
 										<th>Product Name</th>
 										<th>Price</th>
-										<th>Sales Qty</th>
+										<th>Purchase Qty</th>
 										<th>SubTotal</th>
 									</tr>
 								</thead>
