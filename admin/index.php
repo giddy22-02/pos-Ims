@@ -15,16 +15,6 @@
 	<?php include('script.php'); ?>
 	<?php include('modal.php'); ?>
 </body>
-<div class="foot">
-	<footer>
-		<p>Design By <a href="#">G-Tech Technologies</a></p>
-	</footer>
-	<style>
-		.foot {
-			text-align: center;
-			border: 2px solid black;
-		}
-	</style>
-</div>
+ 
 
 </html>

@@ -6,7 +6,7 @@
 
 	<ul class=" nav navbar-nav">
 		<li id="cartme" style="cursor:pointer">
-			<a id="cart_control"><i class="fa fa-shopping-cart fa-fw" style="color:#48AAAD;"></i> My Cart</a>
+			<a id="cart_control"><i class="fa fa-shopping-cart fa-fw" style="color:#48AAAD;"></i>Cart</a>
 		</li>
 		<li id="history"><a href="history.php"><span class="fa fa-list-alt" style="color:#48AAAD;"></span> History</a></li>
 		<li>

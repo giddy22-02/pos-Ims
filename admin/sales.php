@@ -19,7 +19,7 @@
 						<th class="hidden"></th>
                         <th>Sales Date</th>
 						<th>Customer</th>
-                        <th>Total Purchase</th>
+                        <th>Total Sales</th>
 						<th>Action</th>
                     </tr>
                 </thead>

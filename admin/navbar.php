@@ -1,7 +1,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 5px">
     <div class="navbar-header">
-        <a class="navbar-brand" href="#">Sinto Electronics Ltd||P.O BOX 4589-00100 Nairobi Kenya|| Email:info@sinto.co.ke</a>
+        <a class="navbar-brand" href="#" style="color: #ffffff;">My Project Electronics||P.O BOX 49440-00100 Nairobi Kenya|| Email:info@myprojectelectronics.co.ke</a>
     </div>
 
     <ul class="nav navbar-top-links navbar-right">
