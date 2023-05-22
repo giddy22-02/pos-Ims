@@ -4,7 +4,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<center><h4 class="modal-title" id="myModalLabel">Purchase Full Details</h4></center>
+					<center><h4 class="modal-title" id="myModalLabel">Sales Full Details</h4></center>
                 </div>
                 <div class="modal-body">
 				<?php
@@ -14,7 +14,7 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-lg-12">
-							<span>Customer: <strong><?php echo ucwords($srow['customer_name']); ?></strong></span>
+							<span>Sales Person: <strong><?php echo ucwords($srow['customer_name']); ?></strong></span>
 							<span class="pull-right">Date: <strong><?php echo date("F d, Y", strtotime($srow['sales_date'])); ?></strong></span>
 						</div>
 					</div>
@@ -26,7 +26,7 @@
 									<tr>
 										<th>Product Name</th>
 										<th>Price</th>
-										<th>Purchase Qty</th>
+										<th>Sales Qty</th>
 										<th>SubTotal</th>
 									</tr>
 								</thead>

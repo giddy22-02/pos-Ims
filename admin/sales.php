@@ -18,7 +18,7 @@
                     <tr>
 						<th class="hidden"></th>
                         <th>Sales Date</th>
-						<th>Customer</th>
+						<th>Sales Person</th>
                         <th>Total Sales</th>
 						<th>Action</th>
                     </tr>

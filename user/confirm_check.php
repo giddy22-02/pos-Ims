@@ -21,6 +21,7 @@
 		
 		$newqty=$prorow['product_qty']-$row['qty'];
 		
+		
 		mysqli_query($conn,"update product set product_qty='$newqty' where productid='".$row['productid']."'");
 		
 		mysqli_query($conn,"insert into inventory (userid, action, productid, quantity, inventory_date) values ('".$_SESSION['id']."', 'Purchase', '".$row['productid']."', '".$row['qty']."', NOW())");
